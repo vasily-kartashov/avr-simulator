@@ -1,0 +1,130 @@
+int at90s2313_int[]={
+  RESET,INT0,INT1,TIMER1_CAPT,TIMER1_COMPA,TIMER1_OVF,
+  TIMER0_OVF,UART0_RX,UART0_UDRE,UART0_TX,ANALOG_COMP,-1};
+
+IO_port at90s2313_io[]={
+  {SREG,  0x3F,0xFF,0xFF,0},
+  {SPL,   0x3D,0xFF,0xFF,0},
+  {GIMSK, 0x3B,0xC0,0xC0,0},
+  {GIFR,  0x3A,0xC0,0xC0,0},
+  {TIMSK, 0x39,0xCA,0xCA,0},
+  {TIFR,  0x38,0xCA,0xCA,0},
+  {MCUCR, 0x35,0x3F,0x3F,0},
+  {TCCR0, 0x33,0x07,0x07,0},
+  {TCNT0, 0x32,0xFF,0xFF,0},
+  {TCCR1A,0x2F,0xC3,0xC3,0},
+  {TCCR1B,0x2E,0xCF,0xCF,0},
+  {TCNT1H,0x2D,0xFF,0xFF,0},
+  {TCNT1L,0x2C,0xFF,0xFF,0},
+  {OCR1AH,0x2B,0xFF,0xFF,0},
+  {OCR1AL,0x2A,0xFF,0xFF,0},
+  {ICR1H, 0x25,0x00,0xFF,0},
+  {ICR1L, 0x24,0x00,0xFF,0},
+  {WDTCR, 0x21,0x1F,0x1F,0},
+  {EEARL, 0x1E,0x7F,0x7F,0},
+  {EEDR,  0x1D,0xFF,0xFF,0},
+  {EECR,  0x1C,0x07,0x07,0},
+  {PORTB, 0x18,0xFF,0xFF,0},
+  {DDRB,  0x17,0xFF,0xFF,0},
+  {PINB,  0x16,0x00,0xFF,0},
+  {PORTD, 0x12,0x7F,0x7F,0},
+  {DDRD,  0x11,0x7F,0x7F,0},
+  {PIND,  0x10,0x00,0x7F,0},
+  {UDR0,  0x0C,0xFF,0xFF,0},
+  {UCSR0A,0x0B,0x40,0xF8,0x20},
+  {UCSR0B,0x0A,0xFD,0xFF,0x02},
+  {UBRR0L,0x09,0xFF,0xFF,0},
+  {ACSR,  0x08,0x9F,0xBF,0},
+  {-1,0,0,0}
+};
+
+Pin at90s2313_pins[]={
+  {RXD0_PIN,0x12,0x10,1<<0},
+  {TXD0_PIN,0x12,0x10,1<<1},
+  {INT0_PIN,0x12,0x10,1<<2},
+  {INT1_PIN,0x12,0x10,1<<3},
+  {T0_PIN,  0x12,0x10,1<<4},
+  {T1_PIN,  0x12,0x10,1<<5},
+  {IC1_PIN, 0x12,0x10,1<<6},
+
+  {AIN0_PIN,0x18,0x16,1<<0},
+  {AIN1_PIN,0x18,0x16,1<<1},
+  {OC1A_PIN,0x18,0x16,1<<3},
+  {-1,0,0,0}
+};
+
+Flag at90s2313_flags[]={
+  {INT0_FLAG,  GIMSK, 1<<6},
+  {INT1_FLAG,  GIMSK, 1<<7},
+
+  {INTF0_FLAG, GIFR,  1<<6},
+  {INTF1_FLAG, GIFR,  1<<7},
+
+  {TOIE0_FLAG, TIMSK, 1<<1},
+  {TICIE1_FLAG,TIMSK, 1<<3},
+  {OCIE1A_FLAG,TIMSK, 1<<6},
+  {TOIE1_FLAG, TIMSK, 1<<7},
+
+  {TOV0_FLAG,  TIFR,  1<<1},
+  {ICF1_FLAG,  TIFR,  1<<3},
+  {OCF1A_FLAG, TIFR,  1<<6},
+  {TOV1_FLAG,  TIFR,  1<<7},
+
+  {ISC00_FLAG, MCUCR, 1<<0},
+  {ISC01_FLAG, MCUCR, 1<<1},
+  {ISC10_FLAG, MCUCR, 1<<2},
+  {ISC11_FLAG, MCUCR, 1<<3},
+  {SM0_FLAG,   MCUCR, 1<<4},
+  {SE_FLAG,    MCUCR, 1<<5},
+
+  {CS00_FLAG,  TCCR0, 1<<0},
+  {CS01_FLAG,  TCCR0, 1<<1},
+  {CS02_FLAG,  TCCR0, 1<<2},
+
+  {PWM10_FLAG, TCCR1A,1<<0},
+  {PWM11_FLAG, TCCR1A,1<<1},
+  {COM1A0_FLAG,TCCR1A,1<<6},
+  {COM1A1_FLAG,TCCR1A,1<<7},
+
+  {CS10_FLAG,  TCCR1B,1<<0},
+  {CS11_FLAG,  TCCR1B,1<<1},
+  {CS12_FLAG,  TCCR1B,1<<2},
+  {CTC1_FLAG,  TCCR1B,1<<3},
+  {ICES1_FLAG, TCCR1B,1<<6},
+  {ICNC1_FLAG, TCCR1B,1<<7},
+
+  {WDP0_FLAG,  WDTCR, 1<<0},
+  {WDP1_FLAG,  WDTCR, 1<<1},
+  {WDP2_FLAG,  WDTCR, 1<<2},
+  {WDE_FLAG,   WDTCR, 1<<3},
+  {WDTOE_FLAG, WDTCR, 1<<4},
+
+  {EERE_FLAG,  EECR,  1<<0},
+  {EEWE_FLAG,  EECR,  1<<1},
+  {EEMWE_FLAG, EECR,  1<<2},
+
+  {OR0_FLAG,    UCSR0A,1<<3},
+  {FE0_FALG,    UCSR0A,1<<4},
+  {UDRE0_FLAG,  UCSR0A,1<<5},
+  {TXC0_FLAG,   UCSR0A,1<<6},
+  {RXC0_FLAG,   UCSR0A,1<<7},
+
+  {TXB80_FLAG,  UCSR0B,1<<0},
+  {RXB80_FLAG,  UCSR0B,1<<1},
+  {CHR90_FLAG,  UCSR0B,1<<2},
+  {TXEN0_FLAG,  UCSR0B,1<<3},
+  {RXEN0_FLAG,  UCSR0B,1<<4},
+  {UDRIE0_FLAG, UCSR0B,1<<5},
+  {TXCIE0_FLAG, UCSR0B,1<<6},
+  {RXCIE0_FLAG, UCSR0B,1<<7},
+
+  {ACIS0_FLAG, ACSR,  1<<0},
+  {ACIS1_FLAG, ACSR,  1<<1},
+  {ACIC_FLAG,  ACSR,  1<<2},
+  {ACIE_FLAG,  ACSR,  1<<3},
+  {ACI_FLAG,   ACSR,  1<<4},
+  {ACO_FLAG,   ACSR,  1<<5},
+  {ACD_FLAG,   ACSR,  1<<7},
+  
+  {-1,-1}
+};

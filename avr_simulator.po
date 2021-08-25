@@ -1,0 +1,327 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2001-09-20 13:46+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: ENCODING\n"
+
+#: buttons_menu.c:62 buttons_menu.c:66
+msgid "Open"
+msgstr "Открыть"
+
+#: buttons_menu.c:62 buttons_menu.c:66
+msgid "Load Flash"
+msgstr "Загрузить Flash"
+
+#: buttons_menu.c:63 buttons_menu.c:67
+msgid "Reload"
+msgstr "Перечитать"
+
+#: buttons_menu.c:63 buttons_menu.c:67 buttons_menu.c:82 buttons_menu.c:86
+msgid "Reload Flash"
+msgstr "Перечитать Flash"
+
+#: buttons_menu.c:65 buttons_menu.c:69
+msgid "Trace"
+msgstr ""
+
+#: buttons_menu.c:66 buttons_menu.c:70 buttons_menu.c:105 buttons_menu.c:109
+msgid "Trace into"
+msgstr "Шаг"
+
+#: buttons_menu.c:67 buttons_menu.c:71 buttons_menu.c:106 buttons_menu.c:110
+msgid "Step Over"
+msgstr ""
+
+#: buttons_menu.c:68 buttons_menu.c:72 buttons_menu.c:107 buttons_menu.c:111
+msgid "Step Out"
+msgstr ""
+
+#: buttons_menu.c:69 buttons_menu.c:73 buttons_menu.c:108 buttons_menu.c:112
+#: menu_options.c:395 menu_options.c:401
+msgid "Multi Step"
+msgstr ""
+
+#: buttons_menu.c:70 buttons_menu.c:74 buttons_menu.c:109 buttons_menu.c:113
+#: menu_options.c:442 menu_options.c:449
+msgid "Auto Step"
+msgstr ""
+
+#: buttons_menu.c:72 buttons_menu.c:76 buttons_menu.c:103 buttons_menu.c:107
+msgid "Run"
+msgstr "Запуск"
+
+#: buttons_menu.c:72 buttons_menu.c:76
+msgid "Run programm"
+msgstr "Запустить программу"
+
+#: buttons_menu.c:73 buttons_menu.c:77 buttons_menu.c:104 buttons_menu.c:108
+msgid "Stop"
+msgstr "Стоп"
+
+#: buttons_menu.c:73 buttons_menu.c:77
+msgid "Stop running programm"
+msgstr "Остановить запущенную программу"
+
+#: buttons_menu.c:75 buttons_menu.c:79 buttons_menu.c:102 buttons_menu.c:106
+msgid "Reset"
+msgstr "Сброс"
+
+#: buttons_menu.c:80 buttons_menu.c:84
+msgid "Load Flash..."
+msgstr "Загрузить Flash..."
+
+#: buttons_menu.c:84 buttons_menu.c:88
+msgid "Load EEPROM..."
+msgstr "Загрузить EEPROM..."
+
+#: buttons_menu.c:86 buttons_menu.c:90
+msgid "Reload EEPROM"
+msgstr "Перечитать EEPROM"
+
+#: buttons_menu.c:88 buttons_menu.c:92
+msgid "Quit"
+msgstr "Выход"
+
+#: avr_simulator.c:1073 buttons_menu.c:92 buttons_menu.c:96 menu_memory.c:306
+msgid "General Registers"
+msgstr "Общие регистры"
+
+#: avr_simulator.c:1426 buttons_menu.c:94 buttons_menu.c:98 menu_memory.c:976
+#: menu_memory.c:978
+msgid "I/O Registers"
+msgstr "Регистры Ввода/Вывода"
+
+#: avr_simulator.c:1175 buttons_menu.c:96 buttons_menu.c:100 menu_memory.c:547
+msgid "SRAM"
+msgstr "ОЗУ"
+
+#: buttons_menu.c:97 buttons_menu.c:101
+msgid "EEPROM"
+msgstr "EEPROM"
+
+#: buttons_menu.c:113 buttons_menu.c:117
+msgid "Project..."
+msgstr "Утановки проэкта..."
+
+#: buttons_menu.c:114 buttons_menu.c:118
+msgid "Debugger..."
+msgstr "Отладчик..."
+
+#: buttons_menu.c:115 buttons_menu.c:119
+msgid "Port Logging..."
+msgstr ""
+
+#: buttons_menu.c:116 buttons_menu.c:120
+msgid "Port Stimuli..."
+msgstr "Стимуляция портов..."
+
+#: buttons_menu.c:120 buttons_menu.c:124 help.c:93
+msgid "About"
+msgstr "О программе"
+
+#: buttons_menu.c:124 buttons_menu.c:128
+msgid "File"
+msgstr "Файл"
+
+#: buttons_menu.c:126 buttons_menu.c:130
+msgid "Memory"
+msgstr "Память"
+
+#: buttons_menu.c:128 buttons_menu.c:132
+msgid "Debug"
+msgstr "Отладчик"
+
+#: buttons_menu.c:130 buttons_menu.c:134
+msgid "Options"
+msgstr "Опции"
+
+#: buttons_menu.c:132 buttons_menu.c:136
+msgid "Help"
+msgstr "Помощь"
+
+#: avr_simulator.c:154 avr_simulator.c:189 menu_options.c:105
+#: menu_options.c:112
+msgid "Selection of file"
+msgstr "Выбор файла"
+
+#: menu_options.c:125 menu_options.c:132
+msgid "Stimuli/Logging ports"
+msgstr "Стимуляция/Сохранение портов"
+
+#: menu_options.c:145 menu_options.c:152
+msgid "Port"
+msgstr "Порт"
+
+#: menu_options.c:217 menu_options.c:225 menu_options.c:513 menu_options.c:521
+#: menu_options.c:730 menu_options.c:797
+msgid "   Use   "
+msgstr " Применить "
+
+#: avr_simulator.c:1143 avr_simulator.c:1313 avr_simulator.c:1603
+#: avr_simulator.c:2125 help.c:165 menu_memory.c:402 menu_memory.c:642
+#: menu_memory.c:1074 menu_memory.c:1076 menu_memory.c:1579 menu_memory.c:1582
+#: menu_options.c:235 menu_options.c:243 menu_options.c:531 menu_options.c:539
+#: menu_options.c:747 menu_options.c:814
+msgid "  Close  "
+msgstr " Закрыть "
+
+#: menu_options.c:375 menu_options.c:381
+msgid "Debugger's options"
+msgstr "Опции отладчика"
+
+#: menu_options.c:406 menu_options.c:412
+msgid "Number of Single Steps"
+msgstr "Количество выполняемых команд"
+
+#: menu_options.c:453 menu_options.c:460
+msgid "Single Step delay (ms)"
+msgstr "Время выполнения"
+
+#: menu_options.c:490 menu_options.c:498
+msgid "Generic"
+msgstr "Основные насторойки"
+
+#: menu_options.c:502 menu_options.c:510
+msgid "Break enabled if interrupt occur"
+msgstr "Останов при прерывании"
+
+#: menu_options.c:603 menu_options.c:614
+msgid "Project"
+msgstr "Проэкт"
+
+#: menu_options.c:621 menu_options.c:642
+msgid "Processor:"
+msgstr "Процессор:"
+
+#: menu_options.c:668 menu_options.c:689
+msgid "Frequency:"
+msgstr "Частота:"
+
+#: menu_options.c:699 menu_options.c:724
+msgid "Watchdog frequency:"
+msgstr "Частота Watchdog:"
+
+#: avr_simulator.c:179 avr_simulator.c:214
+msgid "generic"
+msgstr "Oсновной"
+
+#: avr_simulator.c:222
+msgid "Motorola"
+msgstr "Motorola"
+
+#: avr_simulator.c:231
+msgid "Intel"
+msgstr "Intel"
+
+#: avr_simulator.c:205 avr_simulator.c:240
+msgid "Type of file:"
+msgstr "Тип файла:"
+
+#: avr_simulator.c:268 avr_simulator.c:304
+msgid "Error message"
+msgstr "Сообщение об ошибке"
+
+#: avr_simulator.c:464 avr_simulator.c:466
+msgid "Size of progarm is bigger then size of flash"
+msgstr "Размер программы больше размера Flash памяти"
+
+#: avr_simulator.c:807 avr_simulator.c:808
+msgid "Size of file is bigger then size of eeprom"
+msgstr "Размер файла больше размера EEPROM памяти"
+
+#: avr_simulator.c:916 avr_simulator.c:944 avr_simulator.c:2179
+#: menu_memory.c:458 menu_memory.c:919 menu_memory.c:921 menu_memory.c:1800
+#: menu_memory.c:1803
+msgid "   Hex   "
+msgstr "  Шест.  "
+
+#: avr_simulator.c:926 avr_simulator.c:954 avr_simulator.c:1127
+#: avr_simulator.c:1298 avr_simulator.c:2110 avr_simulator.c:2189
+#: menu_memory.c:386 menu_memory.c:468 menu_memory.c:627 menu_memory.c:929
+#: menu_memory.c:931 menu_memory.c:1564 menu_memory.c:1567 menu_memory.c:1810
+#: menu_memory.c:1813
+msgid " Decimal "
+msgstr " Десят. "
+
+#: avr_simulator.c:1797 avr_simulator.c:1910 avr_simulator.c:1913
+msgid "Elapsed time"
+msgstr "Прошедшее время"
+
+#: avr_simulator.c:1142 avr_simulator.c:1227 avr_simulator.c:1810
+#: avr_simulator.c:1852
+msgid "uS"
+msgstr "мкс"
+
+#: avr_simulator.c:1825 avr_simulator.c:1903
+msgid "Clock"
+msgstr "Такт"
+
+#: avr_simulator.c:1150 avr_simulator.c:1221 avr_simulator.c:1846
+msgid "mS"
+msgstr "мс"
+
+#: avr_simulator.c:187
+msgid "motorola"
+msgstr ""
+
+#: avr_simulator.c:196
+msgid "intel"
+msgstr ""
+
+#: avr_simulator.c:276 avr_simulator.c:293
+msgid "Close"
+msgstr "Закрыть"
+
+#: avr_simulator.c:285
+msgid "Info message"
+msgstr "Сообщение"
+
+#: avr_simulator.c:1081
+msgid "Status Register"
+msgstr "Регистр состояний"
+
+#: avr_simulator.c:1111
+msgid "Elapsed time:"
+msgstr "Прошедшее время:"
+
+#: avr_simulator.c:1158
+msgid "S"
+msgstr "c"
+
+#: avr_simulator.c:1184
+msgid "Clock:"
+msgstr "Такт:"
+
+#: avr_simulator.c:1399
+msgid "Interrupt"
+msgstr "Прерывание"
+
+#: hardware.c:593
+msgid "WatchDog Reset"
+msgstr "Сброс через WatchDog таймер"
+
+#: menu_memory.c:992 menu_memory.c:994
+msgid "Name  Addr  Bit values   Hex"
+msgstr "Имя   Адр      Биты      Шес"
+
+#: menu_options.c:759
+msgid "Unprogrammed"
+msgstr ""
+
+#: menu_options.c:769
+msgid "Programmed"
+msgstr ""
+
+#: menu_options.c:780
+msgid "Reset Delay Time-Out Period"
+msgstr ""

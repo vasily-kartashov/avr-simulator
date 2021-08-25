@@ -1,0 +1,15 @@
+If you already have the source file unziped and untarred, please
+issue the following commands:
+
+<path-to-your-Motif-bin>/xmkmf -a
+make
+
+And you are lucky, your computer will make the program.
+
+If xmkmf fails, you can try to use Makefile.generic
+Copy it into Makefile, edit and try 
+
+make 
+
+Good luck!
+

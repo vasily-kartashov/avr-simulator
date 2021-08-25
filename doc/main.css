@@ -1,0 +1,14 @@
+/* This is the style sheet to use with the main pages */
+
+
+body	{ 		background-image: url("pics/background.gif");
+			background-repeat:	repeat-x;
+			color:			black;
+		}
+A:hover   {color: rgb(0,0,255)}
+A:link    {color: rgb(10,155,255)}
+A:active  {color: rgb(0,0,255)}
+A:visited {color: rgb(0,0,200)}
+
+	
+H1, H2, H3, H4, H5, H6 {color: DarkBlue;}

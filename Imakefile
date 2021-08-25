@@ -1,0 +1,29 @@
+INCLUDES = $(XPM_INCLUDES)
+DEPLIBS = XmClientDepLibs
+LOCAL_LIBRARIES = XmClientLibs
+SYS_LIBRARIES = -lpthread
+CCOPTIONS = -ansi -g -Wall
+SRCS =  avr_simulator.c \
+	func_command.c \
+	hardware.c \
+	menu_options.c \
+        menu_memory.c \
+	buttons_menu.c \
+	xs_wtip.c \
+	help.c \
+
+OBJS =	avr_simulator.o \
+	func_command.o \
+	hardware.o \
+	menu_options.o \
+        menu_memory.o \
+	buttons_menu.o \
+	xs_wtip.o \
+	help.o \
+
+PROGRAMS = avr_simulator
+
+NormalLibraryObjectRule()
+
+MComplexProgramTarget($(PROGRAMS),$(LOCAL_LIBRARIES),$(SYSLIBS))
+

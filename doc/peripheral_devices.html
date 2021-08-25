@@ -1,0 +1,60 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+   <!meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="Author" content="Sergiy Uvarov">
+   <title>AVR Studio User's Guide</title>
+   <link rel="stylesheet" href="main.css" type="text/css" >
+</head>
+
+<body>
+This section describes what peripheral devices are supported. Interrupts
+are worked for all devices.
+
+<p><b>Timer/Counter0,Timer/Counter1,Timer/Counter2,Timer/Counter3</b><br>
+All timers are fully supported by the Simulator. As in real device
+every 16-bit Timer has TEMP register. Double buffer is also
+supported for OCRx
+
+<p><b>Timer/Counter1</b><br>
+For the devices AT90S8515 and AT90S4414,
+the ICP function is set up on PD4 and the OC1B function is set up on PD6.
+
+<!-- <p><big>Watchdog Timer</big><br>
+The Watchdog Timer is fully supported by the Simulator.
+For default the Watchdog oscillator runs at 1MHz but you can change it by 
+<a href="project_window.html">Project Window</a> from 
+Option menu. When Watchdog reset is occured then CPU will be in reset state
+for the <b>Reset Delay Time-Out Period</b>. You can change Reset Delay
+Time-Out Period by using <a href="project_window.html">Project Window</a>. -->
+
+<!-- <p><big>EEPROM</big><br> 
+The EEPROM is fully supported by the Simulator. When the EEPROM is
+read or written CPU is halted for some clock cycles before the next
+instruction is executed.  Number of clocks depeneds from used CPU. The
+write access time is set to defaul 2.5ms but it is easy to
+change. EEPROM interrupt is supported also. The WDR instruction is
+supported. -->
+
+<!-- <p><big>UART</big><br> 
+Only interrupts are supported by the Simulator. -->
+
+<p><b>Analog Comparator</b><br>
+The Analog Comparator is fully supported by the Simulator. When the
+AIN0 is '1' and the AIN1 is '0' the Analog Comparator Output, ACO is
+set to '1' in any other cases it is set to '0'.
+
+<!--<p><big>ADC</big><br> 
+Only interrupt is supported by the Simulator. -->
+
+<p><b>Ports</b><br>
+Ports are simulated as on the real device. As additional option you
+can make log files of changing ports and stimulate ports from a file.
+
+<!-- <p><big>External Interrupts</big><br>
+External interrupts are fully supported by the Simulator. -->
+<br>
+<br>
+<img src="pics/up.gif" border="0" alt="up.gif">
+<a href="index.html">Return to main</a>
+</body>

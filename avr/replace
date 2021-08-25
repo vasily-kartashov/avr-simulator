@@ -1,0 +1,13 @@
+#!/bin/bash
+
+str=$1
+nstr=$2
+shift
+shift
+
+while [ ! "$1" = "" ]; do
+echo \'$1\'
+sed s/$str/$nstr/ $1 >$1.n
+mv $1.n $1
+shift
+done;
